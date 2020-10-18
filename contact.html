@@ -38,43 +38,52 @@
         </div>
       </nav>
     </header>
-    <div class="size">
-        <form class="form" id="oderform" onsubmit="return false">
-          <h5>Pizza Type:</h5><br>
-          <select id="size">
-            <option value="2000"> Large = 1400</option>
-            <option value="2000"> Large = 950</option>
-            <option value="1200">medium =700 </option>
-            <option value="800">small = 500</option>
-          </select>
-          <h5>Crust:</h5>
-          <select id="crust">
-            <option value="100">Crispy = 100</option>
-            <option value="150">Stuffed = 150</option>
-            <option value="200">Gluten-free = 200</option>
-          </select>
-          <h5>Toping (s)</h5><br>
-          <select id="topping">
-            <option value="200">Beef Bacon = 200</option>
-            <option value="200">Jalapeno Peppers = 200</option>
-            <option value="200">Beef Ham = 200</option>
-            <option value="200">Italian Sausage = 200</option>
-            <option value="200">Grilled Chicken = 200</option>
-            <option value="200">Mixed Peppers = 200</option>
-            <option value="200">Extra Cheese = 200</option>
-            
-          </select>
-          <h5>Number of Pizza's:</h5>
-          <select id="no.">
-            <option value="1">one</option>
-            <option value="2">two</option>
-            <option value="3">three</option>
-            <option value="4">four</option>
-            <option value="5">five</option>
-            <option value="6">six</option>
-            <option value="7">sev</option>
-          </select> <br> <br>
-          <br><button onclick="sum()" type="submit" class="btn btn-outline-dark">Order</button>
-        </form>
+    <div class="container">
+        <div class="row">
+            <div class="text-center border-light p-5">
+            <div class="size">
+                <form class="form-group" id="oderform" onsubmit="return false">
+                  <h5 >Pizza Type:</h5>
+                  <br>
+                  <select class="form-control" id="size">
+                    <option value="2000"> Large @1400</option>
+                    <option value="2000"> Large @950</option>
+                    <option value="1200">medium @700 </option>
+                    <option value="800">small @500</option>
+                  </select>
+                  <h5>Crust:</h5>
+                  <select class="form-control" id="crust">
+                    <option value="100">Crispy = 100</option>
+                    <option value="150">Stuffed = 150</option>
+                    <option value="200">Gluten-free = 200</option>
+                  </select>
+                  <h5>Toping (s)</h5><br>
+                  <select class="form-control" id="topping">
+                    <option value="200">Beef Bacon @200</option>
+                    <option value="200">Jalapeno Peppers @200</option>
+                    <option value="200">Beef Ham = 200</option>
+                    <option value="200">Italian Sausage @200</option>
+                    <option value="200">Grilled Chicken @200</option>
+                    <option value="200">Mixed Peppers @200</option>
+                    <option value="200">Extra Cheese @200</option>
+                    
+                  </select>
+                  <h5>Number of Pizza's:</h5>
+                  <select class="form-control" id="no.">
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    <option value="3">three</option>
+                    <option value="4">four</option>
+                    <option value="5">five</option>
+                    <option value="6">six</option>
+                    <option value="7">sev</option>
+                  </select> <br> <br>
+                  <br><button onclick="sum()" type="submit" class="btn btn-outline-dark">Order</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+   
 </body>
 </html>
