@@ -12,6 +12,7 @@
   </head>
   <body>
     <header>
+     
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -38,6 +39,7 @@
         </div>
       </nav>
     </header>
+    <div class="carousel-item active" style="background-image: url('images/pizza-pepperoni-table_30.jpg')">
     <div class="container">
       <div class="jumbotron">
         <form class="form group" id="oderform" onsubmit="return false">
@@ -122,9 +124,26 @@
                 <button onclick="sum()" type="submit" class="btn btn-outline-dark">Order</button>
               </div>
           </div>
+          <div class="col" id="price-content">
+            <h1 class="page-header">Your Order</h1>
+            <h2>Price: Ksh. <span id="final-cost"></span></h2>
+            <div id="order-details">
+              <p><a id="pizza-details-dropdown">Custom Pizza</a></p>
+              <ul id="pizza-details"></ul>
+              <p><a id="default-pizza-dropdown">Pizza</a></p>
+              <ul id="default-pizza-details"></ul>
+            </div>
+            <button type="btn" class="btn btn-danger" id="checkout-btn">Checkout</button>
+            <h3><span id="delivery-option"></span></h3>
+            <button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
+          </div>
+
+            </div>
+          </div>
         </form>
       </div>
     </div>
+  </div>
     <script src="js/scripts.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
    
