@@ -39,64 +39,63 @@
       </nav>
     </header>
     <div class="container">
-        <div class="row">
-            <div class="text-center border-light p-5">
-            <div class="size">
-                <form class="form-group" id="oderform" onsubmit="return false">
-                    <div class="col">
-                        <h5 >Pizza Type:</h5>
-                        <br>
-                            <select class="form-control" id="size">
-                                <option value="2000"> Large @1400</option>
-                                <option value="2000"> Large @950</option>
-                                <option value="1200">medium @700 </option>
-                                <option value="800">small @500</option>
-                            </select>
-                    </div>
-                    <div class="col">
-                        <br>
-                            <h5>Crust:</h5>
-                            <select class="form-control" id="crust">
-                                <option value="100">Crispy = 100</option>
-                                <option value="150">Stuffed = 150</option>
-                                <option value="200">Gluten-free = 200</option>
-                            </select>
-                    </div>
-                    <div class="col">
-                        <br>
-                        <h5>Toping (s)</h5><br>
-                        <select class="form-control" id="topping">
-                          <option value="200">Beef Bacon @200</option>
-                          <option value="200">Jalapeno Peppers @200</option>
-                          <option value="200">Beef Ham = 200</option>
-                          <option value="200">Italian Sausage @200</option>
-                          <option value="200">Grilled Chicken @200</option>
-                          <option value="200">Mixed Peppers @200</option>
-                          <option value="200">Extra Cheese @200</option>
-                        </select>
-                    </div>
-                  <div class="col">
-                    <h5>Number of Pizza's:</h5>
-                    <br>
-                        <select class="form-control" id="no.">
-                        <option value="1">one</option>
-                        <option value="2">two</option>
-                        <option value="3">three</option>
-                        <option value="4">four</option>
-                        <option value="5">five</option>
-                        <option value="6">six</option>
-                        <option value="7">sev</option>
-                    </select> <br> <br>
-                  </div>
-                  <div class="row">
-                      <div class="col">
-                        <button onclick="sum()" type="submit" class="btn btn-outline-dark">Order</button>
-                      </div>
-                  </div>
-                </form>
+      <div class="jumbotron">
+        <form class="form group">
+          <div class="form-row">
+            <div class="col">
+              <select class="form-control form-control-sm">
+                <option>Chicken Supreme</option>
+                <option>BBQ Steak</option>
+                <option>Chicken Bali</option>
+                <option>Margarita</option>
+                <option>Peperoni Passion</option>
+                <option>Regina</option>
+                <option>Peri-peri Chicken</option>
+                <option>Swahili Chicken</option>
+                <option>Hawaiian</option>
+                <option>Veggie Deluxe</option>
+                <option>Extravaganzza</option>
+                <option>Meatzza</option>
+                <option>BBQ Chicken</option>
+                <option>Chicken Tikka</option>
+                <option>Veggie Extravaganza</option>
+                <option>American CheeseBurger</option>
+              </select>
+              
             </div>
-        </div>
-        </div>
+            <div class="col">
+              <select class="form-control form-control-sm">
+                <option value="500">Small @500</option>
+                <option value="700">Medium @700</option>
+                <option value="950">Large @950</option>
+                <option value="1400">Jumo @1400</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <select class="form-control form-ontrol-sm">
+                <option value="150">Beef Bacon @150</option>
+                <option value="150">Jalapeno Peppers @150</option>
+                <option value="150">Pepperoni @150</option>
+                <option value="150">Beef Ham @150</option>
+                <option value="150">Beef @150</option>
+                <option value="150">Italian Sausage @150</option>
+                <option value="150">Grilled Chicken @150</option>
+                <option value="150">Steak @150</option>
+                <option value="150">Fresh Mushroom @150</option>
+                <option value="150">Extra Cheese</option>
+                <option value="50">Onions @50</option>
+                <option value="50">Diced Tomatoes @50</option>
+                <option value="50">Mixed Peppers @50</option>
+                <option value="50">Black Olives @50</option>
+                <option value="50">Pineapple @50</option>
+
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="js/scripts.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
