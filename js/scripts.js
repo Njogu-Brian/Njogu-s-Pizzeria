@@ -3,24 +3,19 @@ function Order (customize, cheese) {
   this.customize=customize
   this.crust = 100;
   this.toppings = 150;
-  this.flavor = 200;
   this.pizzaPrice = 0;
-  this.drinks = 100;
 }
 Order.prototype.pizzaCost = function () {
-  if (this.customSize === "Small 10.") {
+  if (this.customSize === "Small.") {
     this.pizzaPrice += 500;
-  } else if (this.customSize === "Medium 14.") {
+  } else if (this.customSize === "Medium.") {
     this.pizzaPrice += 700;
   } else if (this.customSize === "Large.") {
     this.pizzaPrice += 950;
-  } else if (this.customSize) === "Jumbo.") {
-    this.pizzaPrice +=1400
-  }
+  } 
+  
   this.pizzaPrice += this.crust;
   this.pizzaPrice += this.toppings;
-  this.pizzaPrice += this.flavor;
-  this.pizzaPrice += this.drinks
   return this.pizzaPrice;
 }
 Order.prototype.finalCost = function () {
@@ -44,13 +39,33 @@ $(document).ready(function(event) {
     var customSize = $("select#size").val();
     var crust = $("select#crust").val();
     var toppings = $("select#toppings").val();
-    var flavor = $("select#flavor").val();
-    var pizzaDetails = (customSize + " - " + crust + ", " + cheese + ", " + toppings + ", "  + flavor);
-    var newPizzaOrder = new Order(customSize, cheese);
+    var pizzaDetails = (customSize + " - " + crust + ", " + toppings + ");
+    var newPizzaOrder = new Order(customSize,);
     newPizzaOrder.pizzaCost();
     totalPriceArray.push(newPizzaOrder.pizzaPrice);
     $("#pizza-details-dropdown").show();
     $("#final-cost").text(newPizzaOrder.finalCost());
     $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
-    $("#size, #crust, #cheese, #toppings, #flavor").val("");
+    $("#size, #crust, #toppings, #number").val("");
   });
+  $("#pizza-details-dropdown").click(function() {
+    $("#pizza-details").toggle();
+  });
+///Checkout Btn
+  $("#checkout-btn").click(function() {
+    location.reload();
+  });
+  $("#delivery-btn").click(function() {
+    $("#address").show();
+  });
+    $("form#address-form").submit(function(event) {
+    event.preventDefault();
+    var streetAddress = $("input#street-add").val();
+    var city = $("input#city-add").val();
+    var county = $("select#county-select").val();
+    var newAddress = new Address(streetAddress, city, county)
+    $("#order-content").show();
+    $("#landing-content").hide();
+    $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
+  });
+});
