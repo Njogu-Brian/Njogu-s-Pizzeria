@@ -38,12 +38,6 @@ h6 {
  .checkbox {
      text-align: left;
  }
-body{
-  background-image: url('../images/pizza-pepperoni-table_30.jpg');
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .p13 {
   font-size: 13px
 }
@@ -61,9 +55,4 @@ body{
 /******************************************************/
 #address {
   display: none;
-}
-/*******************FOOTER*************************/
-/***************************************************/
-footer {
-  background-color: white;
 }
