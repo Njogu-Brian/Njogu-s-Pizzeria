@@ -1,19 +1,23 @@
+//business logic
 var totalPriceArray = [];
-function Order (customize, cheese) {
-  this.customize=customize
-  this.crust = 100;
+function Order (customize) {
+  this.customSize = customSize;
+  this.crust = 0;
   this.toppings = 150;
   this.pizzaPrice = 0;
+  this.sidePrice = 100;
 }
 Order.prototype.pizzaCost = function () {
-  if (this.customSize === "Small.") {
+  if (this.customSize === "small") {
     this.pizzaPrice += 500;
-  } else if (this.customSize === "Medium.") {
+  } else if (this.customSize === "medium") {
     this.pizzaPrice += 700;
-  } else if (this.customSize === "Large.") {
+  } else if (this.customSize === "large") {
     this.pizzaPrice += 950;
   } 
-  
+  else if (this.customSize === "jumbo") {
+    this.pizzaPrice += 1400;
+  }
   this.pizzaPrice += this.crust;
   this.pizzaPrice += this.toppings;
   return this.pizzaPrice;
@@ -39,9 +43,8 @@ $(document).ready(function(event) {
     var customSize = $("select#size").val();
     var crust = $("select#crust").val();
     var toppings = $("select#toppings").val();
-    var pizzaDetails = (customSize + " - " + crust + ", " + toppings + ");
-    var newPizzaOrder = new Order(customSize,);
-    newPizzaOrder.pizzaCost();
+    var pizzaDetails = (customSize + " - " + crust + ", " + toppings + ", ");
+    var newPizzaOrder = new Order(customSize);
     totalPriceArray.push(newPizzaOrder.pizzaPrice);
     $("#pizza-details-dropdown").show();
     $("#final-cost").text(newPizzaOrder.finalCost());
