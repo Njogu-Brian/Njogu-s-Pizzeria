@@ -2,7 +2,7 @@
 ### By Brian Njogu
 
 ## Description
-A wepage where customer'c can visit, see available pizzas in the menu page, Place an order of as many pizzas as wanted, checkout and enter a delivery address and get a total cost
+A webpage where customer'c can visit, see available pizzas in the menu page, Place an order of as many pizzas as wanted, checkout and enter a delivery address and get a total cost
 
 ## Technologies Used
 
