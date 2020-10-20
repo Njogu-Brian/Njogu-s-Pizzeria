@@ -42,8 +42,8 @@
     <div class="carousel-item active" style="background-image: url('images/pizza-pepperoni-table_30.jpg')">
     <div class="container">
       <div class="jumbotron">
-        <form class="form group" id="oderform" onsubmit="return false">
-          <div class="form-row">
+        <form class="form group" id="cutomize-pizza">
+          <div class="form-row" id="form-content">
             <div class="col">
               <h6>Pizza Flavor</h6>
               <select class="form-control form-control-sm">
@@ -99,29 +99,10 @@
                 <option value="200">Glute-Free @200</option>
               </select>
             </div>
-            <div class="col">
-              <h6>Number of Pizzas</h6>
-              <select class="form-control form-control-sm" id="number">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-                <option value="5">Five</option>
-              </select>
-            </div>
-            <div class="col">
-              <h6>Drinks</h6>
-              <div class="checkbox" id="drink">
-                <label><input type="Checkbox" value="100">500ml Soda @100</label>
-                <label><input type="Checkbox" value="100">500ml Dasani Water @100</label>
-                <label><input type="Checkbox" value="150">400ml Minute Maid Juice @150</label>
-                <label><input type="Checkbox" value="250">2ltr Soda @250</label>
-              </div>
-            </div>
           </div>
           <div class="row">
               <div class="col">
-                <button onclick="sum()" type="submit" class="btn btn-outline-dark">Order</button>
+                <button type="submit" class="btn btn-outline-dark" id="submit-utom-pizza">Order</button>
               </div>
           </div>
           <div class="col" id="price-content">
